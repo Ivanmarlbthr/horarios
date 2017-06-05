@@ -1,0 +1,587 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Aplic. Web de jQuery Mobile</title>
+<link href="jquery-mobile/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="jquery-mobile/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<style type="text/css">
+#ampliar img{
+-webkit-transform:scale(1); 
+-moz-transform:scale(1); 
+-o-transform:scale(1); 
+-webkit-transition-duration: 0.5s; 
+-moz-transition-duration: 0.5s; 
+-o-transition-duration: 0.5s;
+opacity: 0.5;
+}
+#ampliar img:hover{
+-webkit-transform:scale(2); 
+-moz-transform:scale(2); 
+-o-transform:scale(2); 
+-webkit-transition-duration: 0.5s;
+-moz-transition-duration: 0.5s; 
+-o-transition-duration: 0.5s;
+opacity: 1;
+}
+</style>
+<style>
+	#horario{
+		width: 65%;
+		height: 75%;
+		top: 55%;
+		left: 15%;
+		position: absolute;
+	}
+</style>
+<style>
+	#horario2{
+		width: 65%;
+		height: 75%;
+		top: 20%;
+		left: 15%;
+		position: absolute;
+	}
+</style>
+<style>
+	#CBTIS{
+		width: 20%;
+		height: 40%;
+		top: 60%;
+		left: 40%;
+		position: absolute;
+	}
+</style>
+
+<style type="text/css">
+  .boton_personalizado{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 30px;
+    color: #ffffff;
+    background-color: #CEE8FC;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+  }
+  .boton_personalizado:hover{
+    color: #1883ba;
+    background-color: #ffffff;
+  }
+</style>
+
+</head> 
+<body> 
+
+<div data-role="page" id="page">
+	<div data-role="header">
+		<h1>HORARIOS DE ALUMNOS Y MAESTROS</h1>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview">
+			<li><a href="#page2">4º "A" Contabilidad.</a></li>
+            <li><a href="#page3">4º "B" Alimentos</a></li>
+			<li><a href="#page4">4º "C" Mecánica</a></li>
+			<li><a href="#page5">4º "D" Mecatrónica</a></li>
+			<li><a href="#page6">4º "E" Programación</a></li>
+			<li><a href="#page7">4º "F" Logística</a></li>
+			<li><a href="#page8">4º "G" Ofimática</a></li>
+
+		</ul>		
+	</div>
+	<div data-role="footer">
+		<h4>C.B.T.I.S. No.86 Turno: Matutino</h4>
+	</div>
+	<br><a class="boton_personalizado" href="#MAUS">Manual de usuario</a><div id="CBTIS"><div id="ampliar"><br><br><img src="logo_colores_cbtis_jpg[1].jpg" width="100%" height="100%"></div></div>
+</div>
+
+<div data-role="page" id="page2">
+	<div data-role="header">
+		<h1>4º "A" Contabilidad.</h1>
+	</div>
+	<div id="horario"><br><br><img src="feb-jul2017-025.jpg" width="100%" height="100%"></div> 
+	<div data-role="content"><ul data-role="listview">
+			<li><a href="#DMCG">Mtra.Dulce Marìa Castelàn Gòmez</a></li>
+            <li><a href="#JMG">Mtro.Jorge Moreno Guevara</a></li>
+			<li><a href="#NFLD">C.P.Nora Fresbinda Lopez Dominguez</a></li>
+			<li><a href="#ANCS">C.P. Mtra. Antonieta N.Cortes Sanchez</a></li>
+			<li><a href="#EGMC">Mtra.Erika Guadalupe Morales Castro</a></li>
+			<li><a href="#MROV">Lic.Maria del Rosario Olivares Vargas</a></li>
+        </ul>
+        </div>
+	<div data-role="footer">
+		<h4>HORARIO GENERAL DEL GRUPO</h4>
+	</div>
+	<br><a class="boton_personalizado" href="index.html">Inicio</a>
+	</div>
+</div>
+
+<div data-role="page" id="page3">
+	<div data-role="header">
+		<h1>4º "B" Alimentos.</h1>
+	</div>
+	<div data-role="content">
+	<ul data-role="listview">	
+		<li><a href="#SZL">Ing.Santos Zatarain López</a></li>
+		<li><a href="#DMCG">Mtra.Dulce Marìa Castelàn Gòmez</a></li>
+		<li><a href="#MROV">Lic.Maria del Rosario Olivares Vargas</a></li>	
+		<li><a href="#JMG">Mtro.Jorge Moreno Guevara</a></li>
+		<li><a href="#DSG">Lic. Denise Salas Guzmán</a></li>	
+		<li><a href="#GAGB">Lic. Gustavo A. Gutiérrez Bustos</a></li>
+		<li><a href="#EGMC">Mtra.Erika Guadalupe Morales Castro</a></li>
+		</ul>
+	</div>
+	<div id="horario"><br><br><br><br><img src="feb-jul2017-026.jpg" width="100%" height="100%"></div>
+	<div data-role="footer">
+		<h4>HORARIO GENERAL DEL GRUPO</h4>
+	</div>
+	<br><a class="boton_personalizado" href="index.html">Inicio</a>
+</div>
+
+<div data-role="page" id="page4">
+	<div data-role="header">
+		<h1>4º "C" Mecánica.</h1>
+	</div>
+	<div data-role="content">	
+	<ul data-role="listview">	
+		<li><a href="#EGR">Tec.Eugenio Gonzales Ramos</a></li>
+		<li><a href="#MROV">Lic.Maria del Rosario Olivares Vargas</a></li>	
+		<li><a href="#JMG">Mtro.Jorge Moreno Guevara</a></li>
+		<li><a href="#DMCG">Mtra.Dulce Marìa Castelàn Gòmez</a></li>
+		<li><a href="#HPA">Ing.Hugo Portal Aguilar</a></li>
+		<li><a href="#GRB">Mtro.Gustavo Reyes Banda</a></li>
+		</ul>
+	</div>
+	<div id="horario"><br><br><img src="feb-jul2017-027.jpg" width="100%" height="100%"></div>
+	<div data-role="footer">
+		<h4>HORARIO GENERAL DEL GRUPO</h4>
+	</div>
+	<br><a class="boton_personalizado" href="index.html">Inicio</a>
+</div>
+
+<div data-role="page" id="page5">
+	<div data-role="header">
+		<h1>4º "D" Mecatrónica.</h1>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview">
+		<li><a href="#JMG">Mtro.Jorge Moreno Guevara</a></li>
+		<li><a href="#HPA">Ing.Hugo Portal Aguilar</a></li>	
+		<li><a href="#CMM">Ing.Cabrera Merida Melesio</a></li>
+		<li><a href="#ACA">Ing.Alberto Carrillo Alarcon</a></li>	
+		<li><a href="#MROV">Lic.Maria del Rosario Olivares Vargas</a></li>
+		<li><a href="#RA">Ing.Rosales Alan</a></li>
+		<li><a href="#JCH">Lic.Joel Cruz Hernandez</a></li>
+		</ul>	
+	</div>
+	<div id="horario"><br><br><br><br><img src="feb-jul2017-028.jpg" width="100%" height="100%"></div>
+	<div data-role="footer">
+		<h4>HORARIO GENERAL DEL GRUPO</h4>
+	</div>
+	<br><a class="boton_personalizado" href="index.html">Inicio</a>
+</div>
+
+<div data-role="page" id="page6">
+	<div data-role="header">
+		<h1>4º "E" Programación.</h1>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview">
+		<li><a href="#DNL">Mtro.David Nieto Lopez</a></li>
+		<li><a href="#JCH">Lic.Joel Cruz Hernandez</a></li>
+		<li><a href="#JMG">Mtro.Jorge Moreno Guevara</a></li>
+		<li><a href="#DMCG">Mtra.Dulce Marìa Castelàn Gòmez</a></li>
+		<li><a href="#MROV">Lic.Maria del Rosario Olivares Vargas</a></li>	
+		<li><a href="#HPA">Ing.Hugo Portal Aguilar</a></li>	
+		<li><a href="#OJC">Ing.Omar Juarez Cardenas</a></li>	
+		</ul>
+	</div>
+		<div id="horario"><br><br><br><br><img src="feb-jul2017-029.jpg" width="100%" height="100%"></div>
+	<div data-role="footer">
+		<h4>HORARIO GENERAL DEL GRUPO</h4>
+	</div>
+	<br><a class="boton_personalizado" href="index.html">Inicio</a>
+</div>
+
+<div data-role="page" id="page7">
+	<div data-role="header">
+		<h1>4º "F" Logística.</h1>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview">
+		<li><a href="#MCM">Lic.Mirna Cuevas Martinez</a></li>
+		<li><a href="#AERG">Lic.Arturo Eduardo Ramires Garcia</a></li>
+		<li><a href="#DMCG">Mtra.Dulce Marìa Castelàn Gòmez</a></li>
+		<li><a href="#JAGN">Mem.Julio Alberto Gonzalez Negrete</a></li>
+		<li><a href="#EGMC">Mtra.Erika Guadalupe Morales Castro</a></li>
+		<li><a href="#GAGB">Lic. Gustavo A. Gutiérrez Bustos</a></li>
+		<li><a href="#RMGT">Lic.Roxana Ma.Gomez Trejo</a></li>		
+		</ul>
+	</div>
+	<div id="horario"><br><br><br><br><img src="feb-jul2017-030.jpg" width="100%" height="100%"></div>
+	<div data-role="footer">
+		<h4>HORARIO GENERAL DEL GRUPO</h4>
+	</div>
+	<br><a class="boton_personalizado" href="index.html">Inicio</a>
+</div>
+
+<div data-role="page" id="page8">
+	<div data-role="header">
+		<h1>4º "G" Ofimática.</h1>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview">
+		<li><a href="#GAGB">Lic. Gustavo A. Gutiérrez Bustos</a></li>
+		<li><a href="#ACC">Lic.Abdom Canales Castillo</a></li>
+		<li><a href="#JAGN">Mem.Julio Alberto Gonzalez Negrete</a></li>
+		<li><a href="#DLRV">Lic.Dora Luz Ramirez Velazquez</a></li>
+		<li><a href="#EGMC">Mtra.Erika Guadalupe Morales Castro</a></li>
+		<li><a href="#DMCG">Mtra.Dulce Marìa Castelàn Gòmez</a></li>	
+		</ul>
+	</div>
+	<div id="horario"><br><br><img src="feb-jul2017-031.jpg" width="100%" height="100%"></div>
+	<div data-role="footer">
+		<h4>HORARIO GENERAL DEL GRUPO</h4>
+	</div>
+	<br><a class="boton_personalizado" href="index.html">Inicio</a>
+</div>
+<div data-role="page" id="DMCG">
+	<div data-role="header">
+		<h1>Mtra.Dulce Marìa Castelàn Gòmez</h1>
+	</div>
+	<br><a class="boton_personalizado" href="index.html">Inicio</a>
+	<div data-role="content"><div id="horario2"><br><br><br><img src="feb-jul2017-058.jpg" width="100%" height="100%"></div>	
+	</div>
+	<div data-role="footer">
+		<h4></h4>
+	</div>
+</div>
+
+<div data-role="page" id="JMG">
+	<div data-role="header">
+		<h1>Mtro.Jorge Moreno Guevara</h1>
+	</div>
+	<br><a class="boton_personalizado" href="index.html">Inicio</a>
+	<div data-role="content"><div id="horario2"><br><br><br><img src="feb-jul2017-091.jpg" width="100%" height="100%"></div>	
+	</div>
+	<div data-role="footer">
+		<h4></h4>
+	</div>
+</div>
+
+<div data-role="page" id="NFLD">
+	<div data-role="header">
+		<h1>C.P.Nora Fresbinda Lopez Dominguez</h1>
+	</div>
+	<br><a class="boton_personalizado" href="index.html">Inicio</a>
+	<div data-role="content"><div id="horario2"><br><br><br><img src="feb-jul2017-086.jpg" width="100%" height="100%"></div>	
+	</div>
+	<div data-role="footer">
+		<h4></h4>
+	</div>
+</div>
+
+<div data-role="page" id="ANCS">
+	<div data-role="header">
+		<h1>C.P. Mtra. Antonieta N.Cortes Sanchez</h1>
+	</div>
+	<br><a class="boton_personalizado" href="index.html">Inicio</a>
+	<div data-role="content"><div id="horario2"><br><br><br><img src="feb-jul2017-060.jpg" width="100%" height="100%"></div>	
+	</div>
+	<div data-role="footer">
+		<h4></h4>
+	</div>
+</div>
+
+<div data-role="page" id="EGMC">
+	<div data-role="header">
+		<h1>Mtra.Erika Guadalupe Morales Castro</h1>
+	</div>
+	<br><a class="boton_personalizado" href="index.html">Inicio</a>
+	<div data-role="content"><div id="horario2"><br><br><br><img src="feb-jul2017-090.jpg" width="100%" height="100%"></div>	
+	</div>
+	<div data-role="footer">
+		<h4></h4>
+	</div>
+</div>
+
+<div data-role="page" id="MROV">
+	<div data-role="header">
+		<h1>Lic.Maria del Rosario Olivares Vargas</h1>
+	</div>
+	<br><a class="boton_personalizado" href="index.html">Inicio</a>
+	<div data-role="content"><div id="horario2"><br><br><br><img src="feb-jul2017-093.jpg" width="100%" height="100%"></div>	
+	</div>
+	<div data-role="footer">
+		<h4></h4>
+	</div>
+</div>
+
+<div data-role="page" id="SZL">
+	<div data-role="header">
+		<h1>Ing.Santos Zatarain López</h1>
+	</div>
+	<br><a class="boton_personalizado" href="index.html">Inicio</a>
+	<div data-role="content"><div id="horario2"><br><br><br><img src="feb-jul2017-106.jpg" width="100%" height="100%"></div>	
+	</div>
+	<div data-role="footer">
+		<h4></h4>
+	</div>
+</div>
+
+<div data-role="page" id="DSG">
+	<div data-role="header">
+		<h1>Lic. Denise Salas Guzmán</h1>
+	</div>
+	<br><a class="boton_personalizado" href="index.html">Inicio</a>
+	<div data-role="content"><div id="horario2"><br><br><br><img src="feb-jul2017-103.jpg" width="100%" height="100%"></div>	
+	</div>
+	<div data-role="footer">
+		<h4></h4>
+	</div>
+</div>
+
+
+<div data-role="page" id="GAGB">
+	<div data-role="header">
+		<h1>Lic. Gustavo A. Gutiérrez Bustos</h1>
+	</div>
+	<br><a class="boton_personalizado" href="index.html">Inicio</a>
+	<div data-role="content"><div id="horario2"><br><br><br><img src="feb-jul2017-080.jpg" width="100%" height="100%"></div>	
+	</div>
+	<div data-role="footer">
+		<h4></h4>
+	</div>
+</div>
+
+<div data-role="page" id="EGR">
+	<div data-role="header">
+		<h1>Tec.Eugenio Gonzales Ramos</h1>
+	</div>
+	<br><a class="boton_personalizado" href="index.html">Inicio</a>
+	<div data-role="content"><div id="horario2"><br><br><br><img src="feb-jul2017-078.jpg" width="100%" height="100%"></div>	
+	</div>
+	<div data-role="footer">
+		<h4></h4>
+	</div>
+</div>
+
+<div data-role="page" id="HPA">
+	<div data-role="header">
+		<h1>Ing.Hugo Portal Aguilar</h1>
+	</div>
+	<br><a class="boton_personalizado" href="index.html">Inicio</a>
+	<div data-role="content"><div id="horario2"><br><br><br><img src="feb-jul2017-096.jpg" width="100%" height="100%"></div>	
+	</div>
+	<div data-role="footer">
+		<h4></h4>
+	</div>
+</div>
+
+<div data-role="page" id="GRB">
+	<div data-role="header">
+		<h1>Mtro.Gustavo Reyes Banda</h1>
+	</div>
+	<div data-role="content"><div id="horario2"><br><br><br><img src="feb-jul2017-101.jpg" width="100%" height="100%"></div>	
+	</div>
+	<div data-role="footer">
+		<h4></h4>
+	</div>
+</div>
+
+<div data-role="page" id="CMM">
+	<div data-role="header">
+		<h1>Ing.Cabrera Merida Melesio</h1>
+	</div>
+	<br><a class="boton_personalizado" href="index.html">Inicio</a>
+	<div data-role="content"><div id="horario2"><br><br><br><img src="feb-jul2017-109.jpg" width="100%" height="100%"></div>	
+	</div>
+	<div data-role="footer">
+		<h4></h4>
+	</div>
+</div>
+
+<div data-role="page" id="ACA">
+	<div data-role="header">
+		<h1>Ing.Alberto Carrillo Alarcon</h1>
+	</div>
+	<br><a class="boton_personalizado" href="index.html">Inicio</a>
+	<div data-role="content"><div id="horario2"><br><br><br><img src="feb-jul2017-057.jpg" width="100%" height="100%"></div>	
+	</div>
+	<div data-role="footer">
+		<h4></h4>
+	</div>
+</div>
+
+<div data-role="page" id="RA">
+	<div data-role="header">
+		<h1>Ing.Rosales Alan</h1>
+	</div>
+	<br><a class="boton_personalizado" href="index.html">Inicio</a>
+	<div data-role="content"><div id="horario2"><br><br><br><img src="feb-jul2017-110.jpg" width="100%" height="100%"></div>	
+	</div>
+	<div data-role="footer">
+		<h4></h4>
+	</div>
+</div>
+
+<div data-role="page" id="JCH">
+	<div data-role="header">
+		<h1>Lic.Joel Cruz Hernandez</h1>
+	</div>
+	<br><a class="boton_personalizado" href="index.html">Inicio</a>
+	<div data-role="content"><div id="horario2"><br><br><br><img src="feb-jul2017-062.jpg" width="100%" height="100%"></div>	
+	</div>
+	<div data-role="footer">
+		<h4></h4>
+	</div>
+</div>
+
+<div data-role="page" id="DNL">
+	<div data-role="header">
+		<h1>MTRO.David Nieto Lopez</h1>
+	</div>
+	<br><a class="boton_personalizado" href="index.html">Inicio</a>
+	<div data-role="content"><div id="horario2"><br><br><br><img src="feb-jul2017-092.jpg" width="100%" height="100%"></div>	
+	</div>
+	<div data-role="footer">
+		<h4></h4>
+	</div>
+</div>
+
+<div data-role="page" id="OJC">
+	<div data-role="header">
+		<h1>Ing.Omar Juarez Cardenas</h1>
+	</div>
+	<br><a class="boton_personalizado" href="index.html">Inicio</a>
+	<div data-role="content"><div id="horario2"><br><br><br><img src="feb-jul2017-111.jpg" width="100%" height="100%"></div>	
+	</div>
+	<div data-role="footer">
+		<h4></h4>
+	</div>
+</div>
+
+<div data-role="page" id="MCM">
+	<div data-role="header">
+		<h1>Lic.Mirna Cuevas Martinez</h1>
+	</div>
+	<br><a class="boton_personalizado" href="index.html">Inicio</a>
+	<div data-role="content"><div id="horario2"><br><br><br><img src="feb-jul2017-066.jpg" width="100%" height="100%"></div>	
+	</div>
+	<div data-role="footer">
+		<h4></h4>
+	</div>
+</div>
+
+<div data-role="page" id="AERG">
+	<div data-role="header">
+		<h1>Lic.Arturo Eduardo Ramires Garcia</h1>
+	</div>
+	<br><a class="boton_personalizado" href="index.html">Inicio</a>
+	<div data-role="content"><div id="horario2"><br><br><br><img src="feb-jul2017-097.jpg" width="100%" height="100%"></div>	
+	</div>
+	<div data-role="footer">
+		<h4></h4>
+	</div>
+</div>
+
+<div data-role="page" id="JAGN">
+	<div data-role="header">
+		<h1>Mem.Julio Alberto Gonzalez Negrete</h1>
+	</div>
+	<br><a class="boton_personalizado" href="index.html">Inicio</a>
+	<div data-role="content"><div id="horario2"><br><br><br><img src="feb-jul2017-076.jpg" width="100%" height="100%"></div>	
+	</div>
+	<div data-role="footer">
+		<h4></h4>
+	</div>
+</div>
+
+<div data-role="page" id="RMGT">
+	<div data-role="header">
+		<h1>Lic.Roxana Ma.Gomez Trejo</h1>
+	</div>
+	<br><a class="boton_personalizado" href="index.html">Inicio</a>
+	<div data-role="content"><div id="horario2"><br><br><br><img src="feb-jul2017-075.jpg" width="100%" height="100%"></div>	
+	</div>
+	<div data-role="footer">
+		<h4></h4>
+	</div>
+</div>
+
+<div data-role="page" id="ACC">
+	<div data-role="header">
+		<h1>Lic.Abdom Canales Castillo</h1>
+	</div>
+	<br><a class="boton_personalizado" href="index.html">Inicio</a>
+	<div data-role="content"><div id="horario2"><br><br><br><img src="feb-jul2017-059.jpg" width="100%" height="100%"></div>	
+	</div>
+	<div data-role="footer">
+		<h4></h4>
+	</div>
+</div>
+
+<div data-role="page" id="DLRV">
+	<div data-role="header">
+		<h1>Lic.Dora Luz Ramirez Velazquez</h1>
+	</div>
+	<br><a class="boton_personalizado" href="index.html">Inicio</a>
+	<div data-role="content"><div id="horario2"><br><br><br><img src="feb-jul2017-100.jpg" width="100%" height="100%"></div>	
+	</div>
+	<div data-role="footer">
+		<h4></h4>
+	</div>
+</div>
+
+<div data-role="page" id="MAUS">
+	<div data-role="header">
+		<h1>Manual de usuario</h1>
+	</div>
+	<div data-role="content"> <a class="boton_personalizado" href="index.html">Inicio</a> <h2>Español</h2> <ul>
+		<font color="orange" size="4"><li>Al abrir nuestra aplicación, encontraremos el grupo y el semestre</li></font>
+		<font color="orange" size="4"><li>Seleccionamos el grupo que querramos</li></font>
+		<font color="orange" size="4"><li>Se abrirá otra página donde nos mostrara los nombres de los maestros y el horario general del grupo</li></font>
+		<font color="orange" size="4"><li>Si damos click en el nombre del maestro, se nos abrirá su horario</li></font>
+	</ul>	<br>
+
+	<h2>Simbología</h2>
+	<font color="green" size="4">El siguiente botón nos permetira llevarnos a la página de inicio de la aplicación.</font>
+	<a class="boton_personalizado" href="">Inicio</a>
+	<br>
+	<font color="green" size="4">Mtro.: Maestro.</font>
+	<br>
+	<font color="green" size="4">C.P.: Contador público.</font>
+	<br>
+	<font color="green" size="4">Lic.: Licenciado.</font>
+	<br>
+	<font color="green" size="4">Ing.: Ingeniero.</font>
+	<br>
+	<font color="green" size="4">Tec.: Tecnico.</font>
+    
+    <h2>English</h2>
+	<ul>
+		<font color="purple" size="4"><li>When we open our app, we´ll find the group and semester</li></font>
+		<font color="purple" size="4"><li>We choose the group that we want</li></font>
+		<font color="purple" size="4"><li>Will open an other page where show us the teachers names and the general schedule of the group</li></font>
+		<font color="purple" size="4"><li>If we click on the teacher name, will open their schedule</li></font>
+	</ul> <br>
+
+	<h2>Symbology</h2>
+	<font color="red" size="4">The next button will let us go to home.</font><a class="boton_personalizado" href="">Inicio</a>
+	<br>
+	<font color="red" size="4">Mtro.: Teacher.</font>
+	<br>
+	<font color="red" size="4">C.P: Public Accountant.</font>
+	<br>
+	<font color="red" size="4">Lic.: Graduate.</font>
+	<br>
+	<font color="red" size="4">Ing.: Engineer.</font>
+	<br>
+	<font color="red" size="4">Tec.: Tchnical.</font>
+	</div>
+</div>
+
+</body>
+</html>
